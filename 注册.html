@@ -6,15 +6,24 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- div独占一行 -->
+    <!-- span不换行 -->
+    <!-- &nbsp;空格 -->
+    <!-- &lt;< -->
+    <!-- &gt;> -->
     <h1>注册界面</h1>
     <hr>
     <form>
-    <strong>账号:</strong><input type="text" placeholder="请输入邮箱或手机号">
-    <br><br>
+    <label><strong>账号:</strong></label><input type="text" placeholder="请输入邮箱或手机号">
+    <p></p>
     <strong>密码:</strong><input type="password" placeholder="请输入密码">
+    <p></p>
+    <strong>确认密码</strong><input type="password" placeholder="请输入确认密码">
     <h2>用户信息</h2>
+    <label><strong>用户名称</strong></label><input type="text" placeholder="请输入用户名">
+    <p></p>
     <strong>上传头像:</strong><input type="file" multiple>
-    <br><br>
+    <p></p>
     <strong>性别</strong>
     <label><input type="radio" name="gender" checked> <strong>男</strong></label>
     <label><input type="radio" name="gender"> <strong>女</strong></label>
@@ -33,7 +42,11 @@
     </select>
     <input type="text" placeholder="其他城市请输入">
     <p></p>
-    <input type="checkbox">同意<a href="#">注册条例</a>和<a href="#">登录相关协议</a>
+    <input type="checkbox">已阅并同意以下协议
+    <ul>
+        <li><a href="#">《用户服务协议》</a></li>
+        <li><a href="#">《隐私协议》</a></li>
+    </ul>
     <p></p>
     <button>注册</button>
     <button type="reset">重置</button>
